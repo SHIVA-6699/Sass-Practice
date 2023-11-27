@@ -1,0 +1,10 @@
+$primay-font:(
+    "regular":300,
+    "medium":700,
+    "bold":900
+);
+// map-get funtion map-get is contain list of key values 
+body
+{
+    font-weight: map-get($primay-font,regular);
+}

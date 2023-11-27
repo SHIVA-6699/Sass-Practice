@@ -1,0 +1,10 @@
+$primary-color:red;
+$secondary-color:yellow;
+$first-font-size:6rem;
+body
+{
+    background-color:$primary-color;
+    background-color: $secondary-color;
+    font-size: $first-font-size;
+    text-align: center;
+}
