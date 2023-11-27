@@ -1,0 +1,11 @@
+
+// This is paritail file we can import another scss file this files starting with _(underscore) then it is consider partial scss file
+$color1:red;
+$color2:green;
+$color3:blue;
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

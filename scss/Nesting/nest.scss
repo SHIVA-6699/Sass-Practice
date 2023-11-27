@@ -1,0 +1,43 @@
+$color1: purple;
+
+// .main is the parent element for p tag and h1 tag
+.main {
+  width: 80%;
+  margin: 0 auto;
+
+  // here we nesting the sub childerns to the main parent element
+
+  p {
+    color: white;
+    white-space: wrap;
+    padding: 1px;
+    background-color: $color1;
+  }
+
+  h1
+  {
+    text-align: center;
+// the parent element repersented with &
+    &::before{
+       content: '';
+       width: 9.4rem;
+       height: .25rem;
+       background-color: red;
+       position: absolute;
+       top: 3.9rem;
+       scale: 0 1 ;
+       transition: scale ease-in 400ms;
+       
+    }
+    &:hover::before
+    {
+        scale: 1;
+    }
+  }
+//   this interplanation this used for when same name with parent we use this shortcut
+     #{&}_second_para
+  {
+    background-color: red;
+  }
+
+}

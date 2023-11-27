@@ -1,0 +1,29 @@
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+.main p {
+  color: white;
+  white-space: wrap;
+  padding: 1px;
+  background-color: purple;
+}
+.main h1 {
+  text-align: center;
+}
+.main h1::before {
+  content: "";
+  width: 9.4rem;
+  height: 0.25rem;
+  background-color: red;
+  position: absolute;
+  top: 3.9rem;
+  scale: 0 1;
+  transition: scale ease-in 400ms;
+}
+.main h1:hover::before {
+  scale: 1;
+}
+.main .main_second_para {
+  background-color: red;
+}/*# sourceMappingURL=nest.css.map */
