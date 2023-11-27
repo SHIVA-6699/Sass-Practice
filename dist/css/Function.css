@@ -1,0 +1,22 @@
+body {
+  background-color: red;
+  background-color: yellow;
+  font-size: 6rem;
+  text-align: center;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+  font-size: 1rem;
+}
+@media (max-width: 700px) {
+  body {
+    flex-direction: row;
+  }
+}
+
+.light {
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=Function.css.map */

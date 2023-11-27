@@ -1,0 +1,60 @@
+@import '../Varaibels/Varaibles';
+$font-sizes:(
+    "base":1rem,
+    "medium":10rem,
+    "large":20rem
+);
+// it is very useful no need to write repeated code in every element we can pass parameter also
+@mixin common($direction)
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: $direction;
+    
+}
+@mixin theme ($light-theme)
+{
+    @if $light-theme
+    {
+        background-color: lighten($color: #000000, $amount: 100%);
+        color: darken($color: #ffffff, $amount: 100%);
+    }
+
+}
+
+@mixin mobile
+{
+    @media (max-width:$mobile-width){
+        @content;
+    }
+}
+@function fonts($size)
+{
+    @return map-get($font-sizes, $size );
+}
+
+body
+{
+
+  
+ background-color: #000000;
+ color: white;
+font-size: fonts(base);
+@include mobile{
+    flex-direction: row;
+};
+}
+.light
+{
+    @include theme($light-theme: true);
+
+
+}
+
+// mixins this is also like functions but we can add using include method
+
+
+// setting theme
+
